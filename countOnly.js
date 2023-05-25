@@ -12,6 +12,7 @@ const assertEqual = function(actual, expected) {
 // allItems: an array of strings that we need to look through
 // itemsToCount: an object specifying what to count
 function countOnly(arr, obj) {
+
     let result = {};
     arr.forEach((item) => {
       if (obj[item]) {
