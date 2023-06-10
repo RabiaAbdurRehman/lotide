@@ -7,7 +7,7 @@ const assertArrayEqual = function(actual, expected) {
   }
 
 };
-const eqArrays = function(arr1 , arr2) {
+const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
   }
@@ -46,5 +46,5 @@ const results2 = takeUntil(data2, x => x === ',');
 console.log(results2);
 console.log('---');
 //assertArrayEqual(results1,results2);
-assertArrayEqual((results1), [ 1, 2, 5, 7, 2 ]);
-assertArrayEqual((results2), [ "I've", 'been', 'to', 'Hollywood' ]);
+assertArrayEqual((results1), [1, 2, 5, 7, 2]);
+assertArrayEqual((results2), ["I've", 'been', 'to', 'Hollywood']);

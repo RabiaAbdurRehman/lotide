@@ -2,27 +2,27 @@
 
 
 const assertArrayEqual = function(actual, expected) {
-    if(eqArrays(actual, expected)){
-        console.log(expected);
+  if (eqArrays(actual, expected)) {
+    console.log(expected);
 
-    } else{
-        console.log(expected);
-    }
+  } else {
+    console.log(expected);
+  }
 
 };
-    const eqArrays = function(arr1 , arr2){
-        if (arr1.length !== arr2.length) {
-            return false;
-        }
-        for(let i = 0; i<arr1.length; i++){
+const eqArrays = function(arr1, arr2) {
+  if (arr1.length !== arr2.length) {
+    return false;
+  }
+  for (let i = 0; i < arr1.length; i++) {
 
 
-                if(arr1[i] !== arr2[i]){
-                   return false;
- }
+    if (arr1[i] !== arr2[i]) {
+      return false;
+    }
 
-}
-        return true;
+  }
+  return true;
 };
 function flatten(arr) {
   let flatArray = [];
@@ -42,3 +42,4 @@ function flatten(arr) {
 //let flattenedArr = flatten(arr);
 //console.log(flattenedArr); // [1, 2, 3, 4, 5]
 assertArrayEqual(flatten([1, [2, [3, 4], 5]]), [1, 2, 3, 4, 5]);
+module.exports = flatten;

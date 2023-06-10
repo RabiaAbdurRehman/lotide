@@ -5,7 +5,7 @@ const assertArraysEqual = function(actual, expected) {
     console.log(`🛑 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
-const eqArrays = function(arr1 , arr2) {
+const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
   }
@@ -36,4 +36,5 @@ const letterPositions = function(sentence) {
 };
 const result1 = letterPositions('hello');
 console.log(result1);
-assertArraysEqual(result1["l"], [2,3]);
+assertArraysEqual(result1["l"], [2, 3]);
+module.exports = letterPositions;

@@ -7,3 +7,4 @@ const head = function(array) {
 
 module.exports= head;
 
+

@@ -17,21 +17,21 @@ const takeUntil = require('./takeUntil')
 const findKey = require('./findKey')
 
 module.exports = {
-    head: head,
-    tail: tail,
-    middle: middle,
-    eqArrays: eqArrays,
-    assertEqual: assertEqual,
-    assertArrayEqual: assertArrayEqual,
-    without: without,
-    flatten: flatten,
-    countOnly: countOnly,
-    countLetters: countLetters,
-    letterPositions: letterPositions,
-    findKeyByValue: findKeyByValue,
-    eqObject: eqObject,
-    assertObjectEqual: assertObjectEqual,
-    map: map,
-    takeUntil: takeUntil,
-    findKey: findKey
+    head,
+    tail,
+    middle,
+    eqArrays,
+    assertEqual,
+    assertArrayEqual,
+    without,
+    flatten,
+    countOnly,
+    countLetters,
+    letterPositions,
+    findKeyByValue,
+    eqObject,
+    assertObjectEqual,
+    map,
+    takeUntil,
+    findKey
 }
