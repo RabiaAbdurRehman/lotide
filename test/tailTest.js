@@ -18,16 +18,16 @@ const assertEqual = require('../assertEqual');
 const tail = require('../tail');
 describe("#head", () => {
     it('returns ["lighthouse", "labs"] for ["yo yo", "lighthouse", "labs"]', () => {
-        assertEqual(tail( ["yo yo", "lighthouse", "labs"]), ["lighthouse", "labs"]);
+        assert.deepEqual(tail( ["yo yo", "lighthouse", "labs"]), ["lighthouse", "labs"]);
     })
     it('returns [] for []', () => {
-        assertEqual(tail( []), []);
+        assert.deepEqual(tail( []), []);
     })
     it('returns [1] for []', () => {
-        assertEqual(tail( [1]), []);
+        assert.deepEqual(tail( [1]), []);
     })
     it('returns [2, 3, 4] for [1, 2, 3, 4]', () => {
-        assertEqual(tail( [1, 2, 3, 4]), [2, 3, 4]);
+        assert.deepEqual(tail( [1, 2, 3, 4]), [2, 3, 4]);
     })
 
 })
